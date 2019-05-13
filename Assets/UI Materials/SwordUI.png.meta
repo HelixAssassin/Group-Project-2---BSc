@@ -82,17 +82,6 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -111,7 +100,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa2de5a449c609f47bae4b2a9cf500be
+      spriteID: ff014aa1f3b23394385f4b8fdc3c017d
       vertices: []
       indices: 
       edges: []
@@ -120,10 +109,10 @@ TextureImporter:
       name: SwordUI_1
       rect:
         serializedVersion: 2
-        x: 1455
-        y: 2910
-        width: 323
-        height: 626
+        x: 1381
+        y: 2911
+        width: 300
+        height: 613
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,7 +120,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c77ace462c83c34584ed61579a194ec
+      spriteID: 2c4244a2607ce3f41b0e7e4fc9a271b1
       vertices: []
       indices: 
       edges: []
@@ -139,7 +128,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 178e7e551b3e7f543aa586fd5e3bd27b
+    spriteID: b9cbe24066d0aa940808a3cdcc055522
     vertices: []
     indices: 
     edges: []

@@ -8,7 +8,7 @@ public class UITutorialObject : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            GameObject.Find("Canvas").GetComponent<UITutorialScript>().DisplayCubeTutorial();
+            GameObject.Find("PlayerCanvas").GetComponent<UITutorialScript>().DisplayCubeTutorial();
 
             Debug.Log("Tutorial");
         }

@@ -52,7 +52,7 @@ public class EnemyHealth : MonoBehaviour {
 
         canvas.enabled = false;
 
-        Destroy(gameObject, 10);       
+        Destroy(gameObject, 1);       
     }
 
     private void DisableDamage()

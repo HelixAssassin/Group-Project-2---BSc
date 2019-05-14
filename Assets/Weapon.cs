@@ -2,9 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Weapon : MonoBehaviour {
+public class Weapon : MonoBehaviour
+{
+    private int damage = 30;
 
-    public float attackDamage;
-    public float attackRange;
-    public float attackCoolDown;
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Enemy")
+        {
+            other.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
+        }
+    }
+
+    
 }

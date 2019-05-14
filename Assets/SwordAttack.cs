@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SwordAttack : MonoBehaviour
 {
+    [SerializeField] private GameObject sword;
+
     private Animator anim;
 
     private bool secondAttack;
@@ -79,5 +81,19 @@ public class SwordAttack : MonoBehaviour
     private void DisableRunning()
     {
         anim.SetBool("Running", false);
+    }
+
+    private void EnableSword()
+    {
+        BoxCollider swordCollider = sword.GetComponent<BoxCollider>();
+
+        swordCollider.enabled = true;
+    }
+
+    private void DisableSword()
+    {
+        BoxCollider swordCollider = sword.GetComponent<BoxCollider>();
+
+        swordCollider.enabled = false;
     }
 }

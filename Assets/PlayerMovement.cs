@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour {
 
     CharacterController charController;
 
+    [SerializeField] private Animator anim;
+
     //This part of the code allows the player to move in different directions and also sets the jump speed, move speed and gravity
     [SerializeField] float jumpSpeed = 20.0f;
     [SerializeField] float gravity = 1.0f;
@@ -26,8 +28,8 @@ public class PlayerMovement : MonoBehaviour {
 	void Update () {
         h = Input.GetAxis("Horizontal");
         v = Input.GetAxis("Vertical");
-        //anim.SetFloat("Speed", v);
-        //anim.SetFloat("Direction", h);
+        anim.SetFloat("Speed", v);
+        anim.SetFloat("Direction", h);
 
         // This is the movespeed variable for the player and this allows the object to move.
         Vector3 direction = new Vector3 (h, 0, v);

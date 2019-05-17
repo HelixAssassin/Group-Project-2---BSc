@@ -63,6 +63,6 @@ public class EnemyStates : EnemyHealth {
 
     private void DamagePlayer()
     {
-        GameObject.Find("Test Player").GetComponent<PlayerHealth>().PlayerTakeDamage(damage);
+        GameObject.Find("Test Player").GetComponent<PlayerHealth>().TakeDamage(damage);
     }
 }

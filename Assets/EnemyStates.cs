@@ -37,13 +37,10 @@ public class EnemyStates : EnemyHealth {
 
     protected void MoveTowardsPlayer()
     {
-        h = Input.GetAxis("Horizontal");
-        v = Input.GetAxis("Vertical");
-         
-        Vector3 direction = new Vector3(h, 0, v);
-        Vector3 velocity = direction * moveSpeed;
+        Vector3 direction = playerModel.position - transform.position;
 
-        Vector3 dircetion = playerModel.position - transform.position;
+        direction *= moveSpeed;
+        Debug.Log(direction);
 
         transform.LookAt(playerModel.position);
 
@@ -51,7 +48,7 @@ public class EnemyStates : EnemyHealth {
 
         if (distance >= 2f && isAttacking == false && isDamaged == false && isDead == false)
         {
-            controller.Move(dircetion * Time.deltaTime);
+            controller.Move(direction * Time.deltaTime);
 
             anim.SetBool("IsAttacking", false);
         }

@@ -52,6 +52,8 @@ public class EnemyHealth : MonoBehaviour {
 
         Destroy(gameObject, 1);
 
+        GameObject.Find("GameManager").GetComponent<GameManager>().AddKill();
+
         isDead = true;
     }
 

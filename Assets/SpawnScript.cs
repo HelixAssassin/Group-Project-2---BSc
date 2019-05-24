@@ -5,9 +5,9 @@ using UnityEngine;
 public class SpawnScript : MonoBehaviour {
 
 	[SerializeField] GameObject thingToSpawn;
-	[SerializeField] float delayBetweenSpawns=2.0f;
+	[SerializeField] float delayBetweenSpawns=10.0f;
 	[SerializeField] float timeOfNextSpawn=1f;
-	int amountToSpawn=20;
+	int amountToSpawn=10;
 	static int amountSpawned=1;
 	int currentHealth;
 	

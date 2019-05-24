@@ -10,7 +10,7 @@ public class EnemyStates : EnemyHealth {
     protected bool isAttacking = false;
     protected bool isDamaged = false;
 
-    private float damage = 10;
+    private float damage = 5;
 
     // This allows the character object to move, jump and be affected by gravity
     [SerializeField] float jumpSpeed = 20.0f;
@@ -43,13 +43,13 @@ public class EnemyStates : EnemyHealth {
 
         distance = Vector3.Distance(this.transform.position, playerModel.position);
 
-        if (distance >= 2f && isAttacking == false && isDamaged == false && isDead == false)
+        if (distance >= 3f && isAttacking == false && isDamaged == false && isDead == false && Time.timeScale != 0)
         {
             transform.Translate(Vector3.forward * moveSpeed);
 
-            anim.SetBool("IsAttacking", false);
+            anim.SetBool("IsAttacking   ", false);
         }
-        else if (isDead == false)
+        else if (isDead == false && Time.timeScale != 0)
         {
             isAttacking = true;
 

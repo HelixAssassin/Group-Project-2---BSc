@@ -37,19 +37,11 @@ Material:
     - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 10, y: 10}
-<<<<<<< HEAD:Assets/SwordMaterials/Fabric/New Material.mat
         m_Offset: {x: 0, y: 0}
-=======
-        m_Offset: {x: 0.34405634, y: 0.17202817}
->>>>>>> parent of 3343170... Environment and animations:Assets/Lava_Flowing_Shader/Shaders/New Material.mat
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 332425d8c815c8f46b133bb1f90bd822, type: 3}
         m_Scale: {x: 10, y: 10}
-<<<<<<< HEAD:Assets/SwordMaterials/Fabric/New Material.mat
         m_Offset: {x: 0, y: 0}
-=======
-        m_Offset: {x: 17.202818, y: 0}
->>>>>>> parent of 3343170... Environment and animations:Assets/Lava_Flowing_Shader/Shaders/New Material.mat
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}

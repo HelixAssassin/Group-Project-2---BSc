@@ -32,7 +32,7 @@ public class PlayerMovement1 : MonoBehaviour
 
     void Start()
     {
-        /*rifleAnim.GetComponent<Animator>();*/ 
+        rifleAnim.GetComponent<Animator>();
     }
 
 

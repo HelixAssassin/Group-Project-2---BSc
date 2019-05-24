@@ -8,6 +8,11 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject deathMenu;
 
+    public void Start()
+    {
+        Time.timeScale = 1;
+    }
+
     public void EndGame()
     {
         deathMenu.SetActive(true);

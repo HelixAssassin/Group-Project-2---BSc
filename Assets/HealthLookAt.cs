@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class HealthLookAt : MonoBehaviour
 {
-    [SerializeField] Camera playerCamera;
+    [SerializeField] Transform playerPosition;
 
-
-	void Update ()
+    private void Start()
     {
-        transform.LookAt(playerCamera.transform.position);
+        playerPosition = GameObject.Find("Test Player").transform;
+    }
+
+
+    void Update ()
+    {
+        transform.LookAt(playerPosition.transform.position);
 	}
 }

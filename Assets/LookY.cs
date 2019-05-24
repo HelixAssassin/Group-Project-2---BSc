@@ -8,17 +8,22 @@ public class LookY : MonoBehaviour {
     public float maximumY = 30f;
     float rotationY = 0F;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
-        rotationY = Mathf.Clamp(rotationY, minimumY, maximumY);
+    void Update()
+    {
+        MoveY();
+    }
 
-        transform.localEulerAngles = new Vector3(-rotationY, transform.localEulerAngles.y, 0);
-		
-	}
+
+    private void MoveY()
+    {
+
+        if (Time.timeScale != 0)
+        {
+            rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
+            rotationY = Mathf.Clamp(rotationY, minimumY, maximumY);
+
+            transform.localEulerAngles = new Vector3(-rotationY, transform.localEulerAngles.y, 0);
+        }
+    }
 }
+

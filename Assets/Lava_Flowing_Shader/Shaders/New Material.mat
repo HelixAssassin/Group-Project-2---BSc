@@ -45,11 +45,11 @@ Material:
     - _LavaTex:
         m_Texture: {fileID: 2800000, guid: cc2d009b31ce2134a9438a34a78632a0, type: 3}
         m_Scale: {x: 10, y: 10}
-        m_Offset: {x: 0.4492567, y: 0.22462834}
+        m_Offset: {x: 0.03886389, y: 0.019431945}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: cc2d009b31ce2134a9438a34a78632a0, type: 3}
         m_Scale: {x: 10, y: 10}
-        m_Offset: {x: 22.462801, y: 0}
+        m_Offset: {x: 1.9431947, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}

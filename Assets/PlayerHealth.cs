@@ -14,14 +14,24 @@ public class PlayerHealth : MonoBehaviour
 
     private float fillAmount = 1;
 
+    private void Start()
+    {
+        
+    }
+
     private void Update()
     {
-        UpdateHealthBar();
+        UpdateHealthBar(); 
     }
 
     public void TakeDamage(float amount)
     {
         currentHealth -= amount;
+
+        if(currentHealth <= 0)
+        {
+            GameObject.Find("GameManager").GetComponent<GameManager>().EndGame();
+        }
 
         fillAmount = currentHealth / 100;
     }

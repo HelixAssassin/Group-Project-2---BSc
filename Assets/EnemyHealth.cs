@@ -46,13 +46,13 @@ public class EnemyHealth : MonoBehaviour {
 
         Destroy(GetComponent<CharacterController>());
 
-        Destroy(GetComponent<EnemyStates>());
-
         Destroy(GetComponent<CapsuleCollider>());
 
         canvas.enabled = false;
 
-        Destroy(gameObject, 1);       
+        Destroy(gameObject, 1);
+
+        isDead = true;
     }
 
     private void DisableDamage()

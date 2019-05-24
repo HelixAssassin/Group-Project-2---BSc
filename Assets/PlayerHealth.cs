@@ -2,19 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private float currentHealth;
 
     [SerializeField] private Image playerHealthBar;
-    
+
+    [SerializeField] private TextMeshProUGUI healthText;
+
+    private float fillAmount = 1;
+
+    private void Update()
+    {
+        UpdateHealthBar();
+    }
 
     public void TakeDamage(float amount)
     {
         currentHealth -= amount;
 
-        playerHealthBar.fillAmount -= amount / 100;
+        fillAmount = currentHealth / 100;
     }
 
     public void Damage(int damageValue)
@@ -34,5 +43,12 @@ public class PlayerHealth : MonoBehaviour
 
             gameObject.SetActive(false);
         }
+    }
+
+    private void UpdateHealthBar()
+    {
+        playerHealthBar.fillAmount = Mathf.Lerp(playerHealthBar.fillAmount, fillAmount, Time.deltaTime * 4f);
+
+        healthText.text = "" + currentHealth;
     }
  }

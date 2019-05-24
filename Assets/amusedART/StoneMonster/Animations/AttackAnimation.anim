@@ -6555,7 +6555,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.9166667
+  - time: 0.96666664
     functionName: IsNotAttacking
     data: 
     objectReferenceParameter: {fileID: 0}

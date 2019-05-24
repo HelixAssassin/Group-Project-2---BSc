@@ -3,7 +3,6 @@ guid: b77dc1a4b7dd9a9489c195cafa398b88
 TextureImporter:
   fileIDToRecycleName:
     21300000: SwordUI_0
-    21300002: SwordUI_1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -89,10 +88,10 @@ TextureImporter:
       name: SwordUI_0
       rect:
         serializedVersion: 2
-        x: 1056
-        y: 2909
-        width: 312
-        height: 622
+        x: 1376
+        y: 3007
+        width: 315
+        height: 627
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -100,27 +99,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff014aa1f3b23394385f4b8fdc3c017d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SwordUI_1
-      rect:
-        serializedVersion: 2
-        x: 1381
-        y: 2911
-        width: 300
-        height: 613
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c4244a2607ce3f41b0e7e4fc9a271b1
+      spriteID: 452413ece41a2a845ba135cf63368aea
       vertices: []
       indices: 
       edges: []
@@ -128,7 +107,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b9cbe24066d0aa940808a3cdcc055522
+    spriteID: 11bc64a0c31d10d4cad5c4fefa09c8eb
     vertices: []
     indices: 
     edges: []

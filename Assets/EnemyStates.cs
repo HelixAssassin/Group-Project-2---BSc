@@ -49,7 +49,7 @@ public class EnemyStates : EnemyHealth {
 
             anim.SetBool("IsAttacking", false);
         }
-        else
+        else if (isDead == false)
         {
             isAttacking = true;
 
@@ -59,7 +59,10 @@ public class EnemyStates : EnemyHealth {
 
     private void DamagePlayer()
     {
-        GameObject.Find("Test Player").GetComponent<PlayerHealth>().TakeDamage(damage);
+        if (distance <= 3f)
+        {
+            GameObject.Find("Test Player").GetComponent<PlayerHealth>().TakeDamage(damage);
+        }
     }
 
     private void IsNotAttacking()

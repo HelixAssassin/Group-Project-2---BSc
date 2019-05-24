@@ -3,7 +3,6 @@ guid: d098e27e14800e745a652c8a1d001029
 TextureImporter:
   fileIDToRecycleName:
     21300000: AxeUI 3_0
-    21300002: AxeUI 3_1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -89,10 +88,10 @@ TextureImporter:
       name: AxeUI 3_0
       rect:
         serializedVersion: 2
-        x: 47
-        y: 154
-        width: 215
-        height: 332
+        x: 200
+        y: 172
+        width: 220
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -100,27 +99,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc1e1bfe2cd02554b8f00547a09a0c2a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AxeUI 3_1
-      rect:
-        serializedVersion: 2
-        x: 312
-        y: 171
-        width: 192
-        height: 316
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7760c9d54365a8249a39ba9a241e6345
+      spriteID: f0173f34a4150d646926929e83c96488
       vertices: []
       indices: 
       edges: []
@@ -128,7 +107,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 94af791fb215e9f46bb5a0f25dd272c1
+    spriteID: 269d345b7871d3f4d922d826e4c1450a
     vertices: []
     indices: 
     edges: []
